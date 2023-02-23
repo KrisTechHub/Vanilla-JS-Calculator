@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    margin: 150px 50px;
+    background-color: #d1d1d1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator {
+    background: rgb(60, 60, 60);
+    display: grid;
+    gap: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(107, 106, 106);
+    max-width:250px; 
+    border-radius: 5px;
+}
+
+.calculator__display {
+    color: black;
+    font-size: 40px;
+    height: 50px;
+    text-align: right;
+    background: #eaeaea;
+    padding-right: 6px;
+    margin: 8px 10px 0px 10px;
+    border-radius: 5px;
+}
+.calculator__keys {
+    padding-right: 0;
+    grid-gap: 5px;
+    margin: 0px 10px 8px 10px;
+    border-radius: 5px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "clear clear divide multiply"
+                        "seven eight nine subtract"
+                        "four five six add"
+                        "one two three equal"
+                        "zero zero dot equal";
+    background-color: #f6f6f6;
+    padding: 5px;
+    justify-content: space-evenly;
+    height:280px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    border: #d1d1d1 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #bababa;
+}
+
+#divide {   
+    grid-area: divide; 
+}
+#multiply { 
+    grid-area: multiply; 
+}
+#add {
+    grid-area: add; 
+}
+#subtract {
+    grid-area: subtract; 
+}
+#clear {
+    grid-area: clear; 
+    width: 105px;
+}
+#zero {
+    grid-area: zero; 
+    width: 105px;
+}
+#dot {
+    grid-area: dot; 
+}
+#equal {
+    grid-area: equal; 
+    height: 107px;
+}
+#nine {
+    grid-area: nine; 
+}
+#eight {
+    grid-area: eight; 
+}
+#seven {
+    grid-area: seven; 
+}
+#six {
+    grid-area: six; 
+}
+#five {
+    grid-area: five; 
+}
+#four {
+    grid-area: four; 
+}
+#three {
+    grid-area: three; 
+}
+#two {
+    grid-area: two; 
+}
+#one {
+    grid-area: one; 
+}
